@@ -1,0 +1,571 @@
+fileFormatVersion: 2
+guid: e4f7f3c9ecc3d4e82ad3b704d54331a7
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 9209277537166861645
+    second: Sprite-ship1_broken_0
+  - first:
+      213: -6864378538707037603
+    second: Sprite-ship1_broken_1
+  - first:
+      213: 3766692846041086500
+    second: Sprite-ship1_broken_2
+  - first:
+      213: 5696541146260934993
+    second: Sprite-ship1_broken_3
+  - first:
+      213: 7152305391875356560
+    second: Sprite-ship1_broken_4
+  - first:
+      213: -13414234953020331
+    second: Sprite-ship1_broken_5
+  - first:
+      213: -6323362248574134416
+    second: Sprite-ship1_broken_6
+  - first:
+      213: -7909274072661085948
+    second: Sprite-ship1_broken_7
+  - first:
+      213: 8808402494022102362
+    second: Sprite-ship1_broken_8
+  - first:
+      213: -1219668950502693351
+    second: Sprite-ship1_broken_9
+  - first:
+      213: -7487682536062910825
+    second: Sprite-ship1_broken_10
+  - first:
+      213: 1225262893813056690
+    second: Sprite-ship1_broken_11
+  - first:
+      213: 7772054137802411509
+    second: Sprite-ship1_broken_12
+  - first:
+      213: 7167507855357511195
+    second: Sprite-ship1_broken_13
+  - first:
+      213: 4271476540474735250
+    second: Sprite-ship1_broken_14
+  - first:
+      213: -1946396600158114642
+    second: Sprite-ship1_broken_15
+  - first:
+      213: 7027211238673201192
+    second: Sprite-ship1_broken_16
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMasterTextureLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 0
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: iPhone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Sprite-ship1_broken_0
+      rect:
+        serializedVersion: 2
+        x: 69
+        y: 197
+        width: 114
+        height: 109
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d45a0d0902dedcf70800000000000000
+      internalID: 9209277537166861645
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sprite-ship1_broken_1
+      rect:
+        serializedVersion: 2
+        x: 71
+        y: 305
+        width: 15
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d525d8c8614dcb0a0800000000000000
+      internalID: -6864378538707037603
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sprite-ship1_broken_2
+      rect:
+        serializedVersion: 2
+        x: 79
+        y: 276
+        width: 92
+        height: 118
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 42ab84acf2bf54430800000000000000
+      internalID: 3766692846041086500
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sprite-ship1_broken_3
+      rect:
+        serializedVersion: 2
+        x: 262
+        y: 288
+        width: 103
+        height: 101
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 151974fadfd2e0f40800000000000000
+      internalID: 5696541146260934993
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sprite-ship1_broken_4
+      rect:
+        serializedVersion: 2
+        x: 245
+        y: 203
+        width: 67
+        height: 81
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 09777dffbd7124360800000000000000
+      internalID: 7152305391875356560
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sprite-ship1_broken_5
+      rect:
+        serializedVersion: 2
+        x: 292
+        y: 258
+        width: 78
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 55c01ba03d750dff0800000000000000
+      internalID: -13414234953020331
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sprite-ship1_broken_6
+      rect:
+        serializedVersion: 2
+        x: 302
+        y: 186
+        width: 70
+        height: 76
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0779f9b9987ee38a0800000000000000
+      internalID: -6323362248574134416
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sprite-ship1_broken_7
+      rect:
+        serializedVersion: 2
+        x: 35
+        y: 58
+        width: 158
+        height: 131
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 40134d3d22d9c3290800000000000000
+      internalID: -7909274072661085948
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sprite-ship1_broken_8
+      rect:
+        serializedVersion: 2
+        x: 69
+        y: 175
+        width: 10
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a5d2ade366bbd3a70800000000000000
+      internalID: 8808402494022102362
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sprite-ship1_broken_9
+      rect:
+        serializedVersion: 2
+        x: 119
+        y: 181
+        width: 24
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 916a6b53d8dd21fe0800000000000000
+      internalID: -1219668950502693351
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sprite-ship1_broken_10
+      rect:
+        serializedVersion: 2
+        x: 147
+        y: 166
+        width: 38
+        height: 37
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 79ef217a768661890800000000000000
+      internalID: -7487682536062910825
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sprite-ship1_broken_11
+      rect:
+        serializedVersion: 2
+        x: 218
+        y: 92
+        width: 143
+        height: 96
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2b4c1363c12010110800000000000000
+      internalID: 1225262893813056690
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sprite-ship1_broken_12
+      rect:
+        serializedVersion: 2
+        x: 26
+        y: 6
+        width: 96
+        height: 59
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5fd41da6f02ebdb60800000000000000
+      internalID: 7772054137802411509
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sprite-ship1_broken_13
+      rect:
+        serializedVersion: 2
+        x: 26
+        y: 40
+        width: 44
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b16086b5b6a187360800000000000000
+      internalID: 7167507855357511195
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sprite-ship1_broken_14
+      rect:
+        serializedVersion: 2
+        x: 210
+        y: 63
+        width: 98
+        height: 68
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 29a39654845574b30800000000000000
+      internalID: 4271476540474735250
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sprite-ship1_broken_15
+      rect:
+        serializedVersion: 2
+        x: 266
+        y: 7
+        width: 121
+        height: 78
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: eac2c87ca920df4e0800000000000000
+      internalID: -1946396600158114642
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sprite-ship1_broken_16
+      rect:
+        serializedVersion: 2
+        x: 315
+        y: 49
+        width: 70
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 828bfbac36ba58160800000000000000
+      internalID: 7027211238673201192
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      Sprite-ship1_broken_10: -7487682536062910825
+      Sprite-ship1_broken_13: 7167507855357511195
+      Sprite-ship1_broken_14: 4271476540474735250
+      Sprite-ship1_broken_6: -6323362248574134416
+      Sprite-ship1_broken_7: -7909274072661085948
+      Sprite-ship1_broken_15: -1946396600158114642
+      Sprite-ship1_broken_3: 5696541146260934993
+      Sprite-ship1_broken_2: 3766692846041086500
+      Sprite-ship1_broken_16: 7027211238673201192
+      Sprite-ship1_broken_12: 7772054137802411509
+      Sprite-ship1_broken_1: -6864378538707037603
+      Sprite-ship1_broken_11: 1225262893813056690
+      Sprite-ship1_broken_0: 9209277537166861645
+      Sprite-ship1_broken_5: -13414234953020331
+      Sprite-ship1_broken_4: 7152305391875356560
+      Sprite-ship1_broken_9: -1219668950502693351
+      Sprite-ship1_broken_8: 8808402494022102362
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

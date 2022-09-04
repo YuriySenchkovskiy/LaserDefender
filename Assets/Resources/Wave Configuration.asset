@@ -1,0 +1,285 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bbcfbcc8083c4a4da7610fa71b417f20, type: 3}
+  m_Name: Wave Configuration
+  m_EditorClassIdentifier: 
+  _definitions:
+  - _isBossWave: 0
+    _path:
+    - _path: {fileID: 7893402912218641290, guid: 7fb241e4980584b64bb22360cc62f143, type: 3}
+      _enemyNumber: 3
+    - _path: {fileID: 2070345679279933676, guid: 262fb503ef01e432d8e87e878eb4f9c5, type: 3}
+      _enemyNumber: 3
+    - _path: {fileID: 6971564017409457474, guid: ba9e394844eab446f97db19a21be70e0, type: 3}
+      _enemyNumber: 3
+    - _path: {fileID: 8768164117245298209, guid: f3a2592e0de974ada947f2a1a02134bb, type: 3}
+      _enemyNumber: 4
+    - _path: {fileID: 3293893201366023545, guid: 847e23d17ddcb47ce988d3b9cdbd9332, type: 3}
+      _enemyNumber: 4
+    - _path: {fileID: 8823788115040347876, guid: a1f04d9cfa5d948e1873cfc004ca7baa, type: 3}
+      _enemyNumber: 4
+    - _path: {fileID: 1626480452229227531, guid: 06abdd0e5edab4e7c97a6244400967b9, type: 3}
+      _enemyNumber: 5
+    - _path: {fileID: 1065493691311719021, guid: 5bc9ed1a470a54f58a3d17ea48213372, type: 3}
+      _enemyNumber: 5
+    - _path: {fileID: 2070345679279933676, guid: 262fb503ef01e432d8e87e878eb4f9c5, type: 3}
+      _enemyNumber: 5
+    - _path: {fileID: 7893402912218641290, guid: 7fb241e4980584b64bb22360cc62f143, type: 3}
+      _enemyNumber: 7
+    _enemyPrefabs:
+    - {fileID: 3906724960234578330, guid: 1723510563b0c447ca717a62db964b05, type: 3}
+    - {fileID: 3906724960234578330, guid: 066f6c03c8c824df78669562ffe9600a, type: 3}
+    - {fileID: 3906724960234578330, guid: bab96852406de4af28f346504fa270d2, type: 3}
+    - {fileID: 3906724960234578330, guid: 390687e55bb90471e8930a6c80aab4e7, type: 3}
+    - {fileID: 3906724960234578330, guid: 968e478116b764dc8ba536d4398f2a15, type: 3}
+    _moveSpeed: 5
+    _timeBetweenEnemySpawns: 0.8
+    _spawnTimeVariance: 0.1
+    _minimumSpawnTime: 0.45
+    _breaksAfterWave: 7
+  - _isBossWave: 1
+    _path:
+    - _path: {fileID: 7893402912218641290, guid: 0bd7455ab90a944ff91b3180bd021d91, type: 3}
+      _enemyNumber: 0
+    _enemyPrefabs:
+    - {fileID: 3906724960234578330, guid: b760e26ebf6fd40e7ac570153a1629bb, type: 3}
+    _moveSpeed: 4.3
+    _timeBetweenEnemySpawns: 0
+    _spawnTimeVariance: 0
+    _minimumSpawnTime: 0
+    _breaksAfterWave: 5
+  - _isBossWave: 0
+    _path:
+    - _path: {fileID: 4611327494156582970, guid: 15d2465f3c666475b84619d02876d590, type: 3}
+      _enemyNumber: 3
+    - _path: {fileID: 7893402912218641290, guid: 7fb241e4980584b64bb22360cc62f143, type: 3}
+      _enemyNumber: 3
+    - _path: {fileID: 7811761579571782787, guid: a688cd676e1444497ae87f232237bb7f, type: 3}
+      _enemyNumber: 4
+    - _path: {fileID: 3307494866453239482, guid: cec37d50ca410404f86ffc3a62c9aec6, type: 3}
+      _enemyNumber: 4
+    - _path: {fileID: 8415938370567524230, guid: f0b416bb91bed46dba64e706630d3839, type: 3}
+      _enemyNumber: 5
+    - _path: {fileID: 8670248375366357056, guid: e57ecb46f2dd041119c4b7d200c9dcd0, type: 3}
+      _enemyNumber: 5
+    - _path: {fileID: 6096170764030650400, guid: bdb7ef88e415f4facbb0a9aa6a0cedd7, type: 3}
+      _enemyNumber: 6
+    - _path: {fileID: 7491279004873499860, guid: e4c8e698b784947c789205c22fff6882, type: 3}
+      _enemyNumber: 5
+    - _path: {fileID: 7014233228237391833, guid: 327c262e9c2b34c66a425e749335b0d3, type: 3}
+      _enemyNumber: 6
+    - _path: {fileID: 1860497009153500956, guid: b0ef03bec6aa3432ea61f60a3757fed7, type: 3}
+      _enemyNumber: 7
+    - _path: {fileID: 4234218509720878194, guid: fb37d72d2aa3641ab90f7f061942e376, type: 3}
+      _enemyNumber: 7
+    - _path: {fileID: 1183520594404698978, guid: 8ab686b4de4f44e90b43277ef43689f6, type: 3}
+      _enemyNumber: 7
+    _enemyPrefabs:
+    - {fileID: 3906724960234578330, guid: 1723510563b0c447ca717a62db964b05, type: 3}
+    - {fileID: 3906724960234578330, guid: 066f6c03c8c824df78669562ffe9600a, type: 3}
+    - {fileID: 3906724960234578330, guid: bab96852406de4af28f346504fa270d2, type: 3}
+    - {fileID: 3906724960234578330, guid: 390687e55bb90471e8930a6c80aab4e7, type: 3}
+    - {fileID: 3906724960234578330, guid: 968e478116b764dc8ba536d4398f2a15, type: 3}
+    - {fileID: 3906724960234578330, guid: b33a9be8cfd5c44b3aa98c878e24685e, type: 3}
+    - {fileID: 3906724960234578330, guid: 3e3d1c5ed47a14d27a4323f83fc4be39, type: 3}
+    - {fileID: 3906724960234578330, guid: 007e0fbb7340b4e408a65760d6304080, type: 3}
+    - {fileID: 3906724960234578330, guid: 0695e41ba3ec24b78b71ff761d61d0fd, type: 3}
+    - {fileID: 3906724960234578330, guid: 450894b2f608a48ac88d9367b3ff6825, type: 3}
+    _moveSpeed: 5.2
+    _timeBetweenEnemySpawns: 0.9
+    _spawnTimeVariance: 0.1
+    _minimumSpawnTime: 0.6
+    _breaksAfterWave: 7
+  - _isBossWave: 1
+    _path:
+    - _path: {fileID: 7893402912218641290, guid: 61f8dd8c1fb134423959b4f05a8cffea, type: 3}
+      _enemyNumber: 0
+    _enemyPrefabs:
+    - {fileID: 3906724960234578330, guid: 429f4e44da3a14f628ffa7412e6ba2c6, type: 3}
+    _moveSpeed: 6
+    _timeBetweenEnemySpawns: 0
+    _spawnTimeVariance: 0
+    _minimumSpawnTime: 0
+    _breaksAfterWave: 5
+  - _isBossWave: 0
+    _path:
+    - _path: {fileID: 8670248375366357056, guid: e57ecb46f2dd041119c4b7d200c9dcd0, type: 3}
+      _enemyNumber: 4
+    - _path: {fileID: 4567615065343431873, guid: 92ffb99703c904b5c94412844bf72d36, type: 3}
+      _enemyNumber: 5
+    - _path: {fileID: 1626480452229227531, guid: 06abdd0e5edab4e7c97a6244400967b9, type: 3}
+      _enemyNumber: 4
+    - _path: {fileID: 5528010850122014527, guid: 2e6acff84296c4dc3915a8836ea44d63, type: 3}
+      _enemyNumber: 4
+    - _path: {fileID: 8415938370567524230, guid: f0b416bb91bed46dba64e706630d3839, type: 3}
+      _enemyNumber: 5
+    - _path: {fileID: 1065493691311719021, guid: 5bc9ed1a470a54f58a3d17ea48213372, type: 3}
+      _enemyNumber: 4
+    - _path: {fileID: 2070345679279933676, guid: 262fb503ef01e432d8e87e878eb4f9c5, type: 3}
+      _enemyNumber: 6
+    - _path: {fileID: 6971564017409457474, guid: ba9e394844eab446f97db19a21be70e0, type: 3}
+      _enemyNumber: 5
+    - _path: {fileID: 3293893201366023545, guid: 847e23d17ddcb47ce988d3b9cdbd9332, type: 3}
+      _enemyNumber: 5
+    - _path: {fileID: 868957588015181713, guid: 8469a34cdab52471380003cd2f984b63, type: 3}
+      _enemyNumber: 6
+    - _path: {fileID: 4234218509720878194, guid: fb37d72d2aa3641ab90f7f061942e376, type: 3}
+      _enemyNumber: 5
+    - _path: {fileID: 6096170764030650400, guid: bdb7ef88e415f4facbb0a9aa6a0cedd7, type: 3}
+      _enemyNumber: 6
+    - _path: {fileID: 7811761579571782787, guid: a688cd676e1444497ae87f232237bb7f, type: 3}
+      _enemyNumber: 4
+    - _path: {fileID: 1183520594404698978, guid: 8ab686b4de4f44e90b43277ef43689f6, type: 3}
+      _enemyNumber: 4
+    - _path: {fileID: 8768164117245298209, guid: f3a2592e0de974ada947f2a1a02134bb, type: 3}
+      _enemyNumber: 4
+    - _path: {fileID: 7491279004873499860, guid: e4c8e698b784947c789205c22fff6882, type: 3}
+      _enemyNumber: 4
+    _enemyPrefabs:
+    - {fileID: 3906724960234578330, guid: b33a9be8cfd5c44b3aa98c878e24685e, type: 3}
+    - {fileID: 3906724960234578330, guid: 3e3d1c5ed47a14d27a4323f83fc4be39, type: 3}
+    - {fileID: 3906724960234578330, guid: 007e0fbb7340b4e408a65760d6304080, type: 3}
+    - {fileID: 3906724960234578330, guid: 0695e41ba3ec24b78b71ff761d61d0fd, type: 3}
+    - {fileID: 3906724960234578330, guid: 450894b2f608a48ac88d9367b3ff6825, type: 3}
+    _moveSpeed: 6
+    _timeBetweenEnemySpawns: 0.9
+    _spawnTimeVariance: 0.1
+    _minimumSpawnTime: 0.5
+    _breaksAfterWave: 7
+  - _isBossWave: 1
+    _path:
+    - _path: {fileID: 7893402912218641290, guid: 5ef6c42cc70364027af00ccc41cc57bf, type: 3}
+      _enemyNumber: 0
+    _enemyPrefabs:
+    - {fileID: 3906724960234578330, guid: ffa0909ba03df47a5a9fa2ed49a9162a, type: 3}
+    _moveSpeed: 8
+    _timeBetweenEnemySpawns: 0
+    _spawnTimeVariance: 0
+    _minimumSpawnTime: 0
+    _breaksAfterWave: 5
+  - _isBossWave: 0
+    _path:
+    - _path: {fileID: 4122452083336473868, guid: c3ea7e20135db4caebfca71b6d7a9e66, type: 3}
+      _enemyNumber: 4
+    - _path: {fileID: 1065493691311719021, guid: 5bc9ed1a470a54f58a3d17ea48213372, type: 3}
+      _enemyNumber: 4
+    - _path: {fileID: 7491279004873499860, guid: e4c8e698b784947c789205c22fff6882, type: 3}
+      _enemyNumber: 4
+    - _path: {fileID: 5528010850122014527, guid: 2e6acff84296c4dc3915a8836ea44d63, type: 3}
+      _enemyNumber: 4
+    - _path: {fileID: 8415938370567524230, guid: f0b416bb91bed46dba64e706630d3839, type: 3}
+      _enemyNumber: 4
+    - _path: {fileID: 8823788115040347876, guid: a1f04d9cfa5d948e1873cfc004ca7baa, type: 3}
+      _enemyNumber: 5
+    - _path: {fileID: 6096170764030650400, guid: bdb7ef88e415f4facbb0a9aa6a0cedd7, type: 3}
+      _enemyNumber: 5
+    - _path: {fileID: 7811761579571782787, guid: a688cd676e1444497ae87f232237bb7f, type: 3}
+      _enemyNumber: 5
+    - _path: {fileID: 3307494866453239482, guid: cec37d50ca410404f86ffc3a62c9aec6, type: 3}
+      _enemyNumber: 5
+    - _path: {fileID: 2070345679279933676, guid: 262fb503ef01e432d8e87e878eb4f9c5, type: 3}
+      _enemyNumber: 5
+    - _path: {fileID: 2130712546060102833, guid: f59170be376d34eab8f6e7143de1962b, type: 3}
+      _enemyNumber: 6
+    - _path: {fileID: 3293893201366023545, guid: 847e23d17ddcb47ce988d3b9cdbd9332, type: 3}
+      _enemyNumber: 6
+    _enemyPrefabs:
+    - {fileID: 3906724960234578330, guid: b33a9be8cfd5c44b3aa98c878e24685e, type: 3}
+    - {fileID: 3906724960234578330, guid: 3e3d1c5ed47a14d27a4323f83fc4be39, type: 3}
+    - {fileID: 3906724960234578330, guid: 007e0fbb7340b4e408a65760d6304080, type: 3}
+    - {fileID: 3906724960234578330, guid: 0695e41ba3ec24b78b71ff761d61d0fd, type: 3}
+    - {fileID: 3906724960234578330, guid: 450894b2f608a48ac88d9367b3ff6825, type: 3}
+    - {fileID: 3906724960234578330, guid: 4954d62729e0446d6b52b035f7ff5480, type: 3}
+    - {fileID: 3906724960234578330, guid: f8b6715c8a00f4393924160675a33833, type: 3}
+    - {fileID: 3906724960234578330, guid: 607a58029ae0641d592ad72d8e4777a5, type: 3}
+    - {fileID: 3906724960234578330, guid: 72163f584f8324b16b157fdad423db42, type: 3}
+    - {fileID: 3906724960234578330, guid: 46c245fef69ee410bb6c7488aa33d258, type: 3}
+    _moveSpeed: 7
+    _timeBetweenEnemySpawns: 0.9
+    _spawnTimeVariance: 0.1
+    _minimumSpawnTime: 0.45
+    _breaksAfterWave: 7
+  - _isBossWave: 1
+    _path:
+    - _path: {fileID: 7893402912218641290, guid: 9b368ae267d8b48d785e59ae96755dc7, type: 3}
+      _enemyNumber: 0
+    _enemyPrefabs:
+    - {fileID: 3906724960234578330, guid: 51a5198ed165d40c28fa83c1b33cfb7d, type: 3}
+    _moveSpeed: 13.5
+    _timeBetweenEnemySpawns: 0
+    _spawnTimeVariance: 0
+    _minimumSpawnTime: 0
+    _breaksAfterWave: 5
+  - _isBossWave: 0
+    _path:
+    - _path: {fileID: 4611327494156582970, guid: 15d2465f3c666475b84619d02876d590, type: 3}
+      _enemyNumber: 3
+    - _path: {fileID: 2384596839675098355, guid: 396377f0b9b834e87bafbf55fff8c379, type: 3}
+      _enemyNumber: 3
+    - _path: {fileID: 4122452083336473868, guid: c3ea7e20135db4caebfca71b6d7a9e66, type: 3}
+      _enemyNumber: 3
+    - _path: {fileID: 2130712546060102833, guid: f59170be376d34eab8f6e7143de1962b, type: 3}
+      _enemyNumber: 3
+    - _path: {fileID: 8670248375366357056, guid: e57ecb46f2dd041119c4b7d200c9dcd0, type: 3}
+      _enemyNumber: 3
+    - _path: {fileID: 7811761579571782787, guid: a688cd676e1444497ae87f232237bb7f, type: 3}
+      _enemyNumber: 3
+    - _path: {fileID: 7893402912218641290, guid: 7fb241e4980584b64bb22360cc62f143, type: 3}
+      _enemyNumber: 3
+    - _path: {fileID: 8768164117245298209, guid: f3a2592e0de974ada947f2a1a02134bb, type: 3}
+      _enemyNumber: 3
+    - _path: {fileID: 6096170764030650400, guid: bdb7ef88e415f4facbb0a9aa6a0cedd7, type: 3}
+      _enemyNumber: 3
+    - _path: {fileID: 1860497009153500956, guid: b0ef03bec6aa3432ea61f60a3757fed7, type: 3}
+      _enemyNumber: 3
+    - _path: {fileID: 7491279004873499860, guid: e4c8e698b784947c789205c22fff6882, type: 3}
+      _enemyNumber: 3
+    - _path: {fileID: 7811761579571782787, guid: a688cd676e1444497ae87f232237bb7f, type: 3}
+      _enemyNumber: 3
+    - _path: {fileID: 7014233228237391833, guid: 327c262e9c2b34c66a425e749335b0d3, type: 3}
+      _enemyNumber: 3
+    - _path: {fileID: 4234218509720878194, guid: fb37d72d2aa3641ab90f7f061942e376, type: 3}
+      _enemyNumber: 3
+    - _path: {fileID: 8415938370567524230, guid: f0b416bb91bed46dba64e706630d3839, type: 3}
+      _enemyNumber: 3
+    - _path: {fileID: 4567615065343431873, guid: 92ffb99703c904b5c94412844bf72d36, type: 3}
+      _enemyNumber: 3
+    - _path: {fileID: 6971564017409457474, guid: ba9e394844eab446f97db19a21be70e0, type: 3}
+      _enemyNumber: 3
+    - _path: {fileID: 1065493691311719021, guid: 5bc9ed1a470a54f58a3d17ea48213372, type: 3}
+      _enemyNumber: 3
+    - _path: {fileID: 3293893201366023545, guid: 847e23d17ddcb47ce988d3b9cdbd9332, type: 3}
+      _enemyNumber: 3
+    - _path: {fileID: 8823788115040347876, guid: a1f04d9cfa5d948e1873cfc004ca7baa, type: 3}
+      _enemyNumber: 3
+    _enemyPrefabs:
+    - {fileID: 3906724960234578330, guid: 4954d62729e0446d6b52b035f7ff5480, type: 3}
+    - {fileID: 3906724960234578330, guid: f8b6715c8a00f4393924160675a33833, type: 3}
+    - {fileID: 3906724960234578330, guid: 607a58029ae0641d592ad72d8e4777a5, type: 3}
+    - {fileID: 3906724960234578330, guid: 72163f584f8324b16b157fdad423db42, type: 3}
+    - {fileID: 3906724960234578330, guid: 46c245fef69ee410bb6c7488aa33d258, type: 3}
+    _moveSpeed: 7
+    _timeBetweenEnemySpawns: 0.9
+    _spawnTimeVariance: 0.1
+    _minimumSpawnTime: 0.6
+    _breaksAfterWave: 7
+  - _isBossWave: 1
+    _path:
+    - _path: {fileID: 7893402912218641290, guid: 8313cbd50746847ba8bdb3b834df33d1, type: 3}
+      _enemyNumber: 0
+    _enemyPrefabs:
+    - {fileID: 3906724960234578330, guid: f4cbcceb66dc2423ca468d6b687e397b, type: 3}
+    _moveSpeed: 5
+    _timeBetweenEnemySpawns: 0
+    _spawnTimeVariance: 0
+    _minimumSpawnTime: 0
+    _breaksAfterWave: 1.2

@@ -21,7 +21,7 @@ namespace Creatures
 
             if (damageDealer != null)
             {
-                TakeDamage(damageDealer.GetDamage());
+                TakeDamage(damageDealer.Damage);
                 damageDealer.Hit();
             }
         }

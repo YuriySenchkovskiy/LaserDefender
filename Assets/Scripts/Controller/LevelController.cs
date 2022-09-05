@@ -3,7 +3,7 @@ using UnityEngine;
 
 namespace Controller
 {
-    public class LevelManager : MonoBehaviour
+    public class LevelController : MonoBehaviour
     {
         [Header("General")]
         [SerializeField] private float _loadGameOverTime = 2f;
@@ -16,7 +16,7 @@ namespace Controller
         [SerializeField] private string _thanksScene = "Thanks";
         
         [Header("Score")]
-        [SerializeField] private ScoreKeeper _scoreKeeper;
+        [SerializeField] private ScoreController _scoreController;
         
         [Header("Score")]
         [SerializeField] private LevelLoader _loader;
@@ -33,7 +33,7 @@ namespace Controller
         
         public void LoadGame()
         {
-            _scoreKeeper.ResetScore();
+            _scoreController.ResetScore();
             _loader.LoadLevel(_gameScene);
         }
         

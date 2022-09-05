@@ -3,19 +3,19 @@ using UnityEngine;
 
 namespace UI
 {
-    public class DataGroup<T, P> where P : MonoBehaviour, IPlayerRenderer<T>
+    public class DataGroup<TData, TPrefab> where TPrefab : MonoBehaviour, IPlayerRenderer<TData>
     {
-        private readonly List<P> _createdItems = new List<P>();
-        private readonly P _prefab;
+        private readonly List<TPrefab> _createdItems = new List<TPrefab>();
+        private readonly TPrefab _prefab;
         private readonly Transform _container;
 
-        public DataGroup(P prefab, Transform container)
+        public DataGroup(TPrefab prefab, Transform container)
         {
             _prefab = prefab;
             _container = container;
         }
 
-        public virtual void SetData(IList<T> data)
+        public virtual void SetData(IList<TData> data)
         {
             for (var i = _createdItems.Count; i < data.Count; i++)
             {

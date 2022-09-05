@@ -328,15 +328,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1718938245348437424, guid: 1736f467591444cacb082f93dacceeff, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -2.3410082
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1718938245348437424, guid: 1736f467591444cacb082f93dacceeff, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 57.975
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1718938245348437424, guid: 1736f467591444cacb082f93dacceeff, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -1219.9733
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1718938245348437424, guid: 1736f467591444cacb082f93dacceeff, type: 3}
       propertyPath: m_LocalRotation.w
@@ -368,7 +368,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1718938245348437425, guid: 1736f467591444cacb082f93dacceeff, type: 3}
       propertyPath: m_Name
-      value: LevelManager
+      value: LevelController
       objectReference: {fileID: 0}
     - target: {fileID: 1718938245348437427, guid: 1736f467591444cacb082f93dacceeff, type: 3}
       propertyPath: _loader

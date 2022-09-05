@@ -2,7 +2,7 @@ using UnityEngine;
 
 namespace Controller
 {
-    public class ScoreKeeper : MonoBehaviour
+    public class ScoreController : MonoBehaviour
     {
         [Header("General")]
         [SerializeField] private Observer.IntEvent _scoreChanged;

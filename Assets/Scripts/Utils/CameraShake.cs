@@ -29,7 +29,7 @@ namespace Utils
             {
                 transform.position = _initialPosition + (Vector3)Random.insideUnitCircle * _shakeMagnitude;
                 elapsedTime += Time.deltaTime;
-                yield return new WaitForEndOfFrame();
+                yield return null;
             }
 
             transform.position = _initialPosition;

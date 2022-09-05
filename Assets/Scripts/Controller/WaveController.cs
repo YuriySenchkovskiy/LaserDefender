@@ -4,7 +4,7 @@ using Waves;
 
 namespace Controller
 {
-    public class GameController : MonoBehaviour
+    public class WaveController : MonoBehaviour
     {
         [Header("General")]
         [SerializeField] private WaveConfiguration _waveConfiguration;

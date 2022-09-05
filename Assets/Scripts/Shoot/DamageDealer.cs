@@ -12,11 +12,8 @@ namespace Shoot
         [SerializeField] private UnityEvent _touched;
         
         private ParticleSystem _effect;
-
-        public int GetDamage()
-        {
-            return _damage;
-        }
+        
+        public int Damage => _damage;
 
         public void Hit()
         {

@@ -89,7 +89,7 @@ GameObject:
   - component: {fileID: 890622651475949320}
   - component: {fileID: 5007966246201153964}
   m_Layer: 0
-  m_Name: ScoreKeeper
+  m_Name: ScoreController
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -273,7 +273,7 @@ MonoBehaviour:
   _soundSettingScene: SoundSetting
   _playerSelectScene: SelectPlayer
   _thanksScene: Thanks
-  _scoreKeeper: {fileID: 760809342638815780}
+  scoreController: {fileID: 760809342638815780}
   _loader: {fileID: 0}
 --- !u!114 &8299379247611160182
 MonoBehaviour:

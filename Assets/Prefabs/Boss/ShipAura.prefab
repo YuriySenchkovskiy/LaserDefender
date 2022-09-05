@@ -11,10 +11,10 @@ GameObject:
   - component: {fileID: 3567975680788379754}
   - component: {fileID: 3567975680788379755}
   - component: {fileID: 3567975680788379753}
-  - component: {fileID: 3567975680788379759}
   - component: {fileID: 3567975680788379752}
   - component: {fileID: 5515707712166422154}
   - component: {fileID: 24921960800712043}
+  - component: {fileID: -5847765683633245774}
   m_Layer: 0
   m_Name: ShipAura
   m_TagString: Untagged
@@ -239,55 +239,6 @@ PolygonCollider2D:
       - {x: 0.65999997, y: -0.81}
       - {x: 0.65999997, y: -0.78999996}
       - {x: 0.62, y: -0.75}
---- !u!114 &3567975680788379759
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3567975680788379748}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 506afab0a4f24fd486f03a23ceb492f9, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _isPlayer: 0
-  _isBoss: 0
-  _health: 500
-  _enemyDie:
-    m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 24921960800712043}
-        m_TargetAssemblyTypeName: Utils.SpawnComponent, Assembly-CSharp
-        m_MethodName: Spawn
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: 5515707712166422154}
-        m_TargetAssemblyTypeName: Utils.DestroyComponent, Assembly-CSharp
-        m_MethodName: Destroy
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-  _newHealthCoefficient: 0
-  _startValueReady: {fileID: 0}
-  _enemyDestroyed: {fileID: 11400000, guid: 9f667a08a1bfc4bc881762f68f1db562, type: 2}
-  _playerDestroyed: {fileID: 0}
-  _enemyDamaged: {fileID: 11400000, guid: 7adc2deadf1a6447780a97909f1a1e9f, type: 2}
-  _playerHealthChanged: {fileID: 0}
-  _bossDestroyed: {fileID: 0}
 --- !u!114 &3567975680788379752
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -334,3 +285,47 @@ MonoBehaviour:
   _zRotation: 180
   _lifeTime: 5
   _isOnAwake: 0
+--- !u!114 &-5847765683633245774
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3567975680788379748}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 520804db097848e69161544259ee2cd6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  HealthValue: 500
+  _isBoss: 0
+  _enemyDie:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 24921960800712043}
+        m_TargetAssemblyTypeName: Utils.SpawnComponent, Assembly-CSharp
+        m_MethodName: Spawn
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 5515707712166422154}
+        m_TargetAssemblyTypeName: Utils.DestroyComponent, Assembly-CSharp
+        m_MethodName: Destroy
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  _enemyDestroyed: {fileID: 11400000, guid: 9f667a08a1bfc4bc881762f68f1db562, type: 2}
+  _enemyDamaged: {fileID: 11400000, guid: 7adc2deadf1a6447780a97909f1a1e9f, type: 2}
+  _bossDestroyed: {fileID: 0}

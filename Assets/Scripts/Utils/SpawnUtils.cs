@@ -10,7 +10,9 @@ namespace Utils
         {
             var container = GameObject.Find(containerName);
             if (container == null)
+            {
                 container = new GameObject(containerName);
+            }
             
             return Instantiate(prefab, position, rotation, container.transform);
         }

@@ -11,10 +11,10 @@ GameObject:
   - component: {fileID: 3906724960234578331}
   - component: {fileID: 8865314550915358589}
   - component: {fileID: -7384912482596547372}
-  - component: {fileID: -4899838926261643022}
   - component: {fileID: 4797214398610340739}
   - component: {fileID: -8550966163363397764}
   - component: {fileID: -2227636809558627791}
+  - component: {fileID: 6708087092090499656}
   m_Layer: 11
   m_Name: Enemy 13
   m_TagString: Untagged
@@ -32,6 +32,7 @@ Transform:
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 3906724960956169796}
   - {fileID: 1206569814657604412}
@@ -75,41 +76,6 @@ CircleCollider2D:
   m_Offset: {x: 0, y: 0.028732479}
   serializedVersion: 2
   m_Radius: 0.3834496
---- !u!114 &-4899838926261643022
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3906724960234578330}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 506afab0a4f24fd486f03a23ceb492f9, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _isPlayer: 0
-  _isBoss: 0
-  _health: 75
-  _enemyDie:
-    m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: -2227636809558627791}
-        m_TargetAssemblyTypeName: ObjectPool.PoolItem, Assembly-CSharp
-        m_MethodName: Release
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-  _enemyDestroyed: {fileID: 11400000, guid: 9f667a08a1bfc4bc881762f68f1db562, type: 2}
-  _playerDestroyed: {fileID: 0}
-  _enemyDamaged: {fileID: 11400000, guid: 7adc2deadf1a6447780a97909f1a1e9f, type: 2}
-  _playerDamaged: {fileID: 0}
-  _bossDestroyed: {fileID: 0}
 --- !u!114 &4797214398610340739
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -124,9 +90,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _damage: 5
   _hitEffect: {fileID: 4691644843474559595, guid: 5a91ee13aec2748ecb1d7115429686b4, type: 3}
-  _isDestroyOnTouch: 1
-  _isUseLifetime: 0
-  _lifeTime: 0
+  _isDestroyOnTouch: 0
   _touched:
     m_PersistentCalls:
       m_Calls: []
@@ -158,8 +122,8 @@ MonoBehaviour:
   _restarted:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: -4899838926261643022}
-        m_TargetAssemblyTypeName: Creatures.Health, Assembly-CSharp
+      - m_Target: {fileID: 6708087092090499656}
+        m_TargetAssemblyTypeName: Creatures.EnemyHealth, Assembly-CSharp
         m_MethodName: SetStartHealth
         m_Mode: 1
         m_Arguments:
@@ -206,6 +170,38 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+--- !u!114 &6708087092090499656
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3906724960234578330}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 520804db097848e69161544259ee2cd6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  HealthValue: 75
+  _isBoss: 0
+  _enemyDie:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: -2227636809558627791}
+        m_TargetAssemblyTypeName: ObjectPool.PoolItem, Assembly-CSharp
+        m_MethodName: Release
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  _enemyDestroyed: {fileID: 11400000, guid: 9f667a08a1bfc4bc881762f68f1db562, type: 2}
+  _enemyDamaged: {fileID: 11400000, guid: 7adc2deadf1a6447780a97909f1a1e9f, type: 2}
+  _bossDestroyed: {fileID: 0}
 --- !u!1 &3906724960956169799
 GameObject:
   m_ObjectHideFlags: 0
@@ -233,6 +229,7 @@ Transform:
   m_LocalRotation: {x: 0, y: 0, z: 1, w: 0}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 3906724960234578331}
   m_RootOrder: 0
@@ -248,6 +245,7 @@ SpriteRenderer:
   m_CastShadows: 0
   m_ReceiveShadows: 0
   m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
@@ -315,6 +313,7 @@ Transform:
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: -0.4, y: 0.2, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1206569814657604412}
   m_RootOrder: 0
@@ -333,7 +332,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _projectilePrefab: {fileID: 3846438013567387017, guid: 1a450e14408e640e1890c1b9531ea921, type: 3}
   _projectileSpeed: 8.9
-  _projectileLifetime: 5
   _baseWaitTime: 0.4
   _shooted: {fileID: 11400000, guid: ea4969303db3541e28d01733f0ec14d6, type: 2}
   _zRotation: 0
@@ -367,6 +365,7 @@ Transform:
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0.4, y: 0.2, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1206569814657604412}
   m_RootOrder: 1
@@ -385,7 +384,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _projectilePrefab: {fileID: 3846438013567387017, guid: 1a450e14408e640e1890c1b9531ea921, type: 3}
   _projectileSpeed: 8.9
-  _projectileLifetime: 5
   _baseWaitTime: 0.4
   _shooted: {fileID: 11400000, guid: ea4969303db3541e28d01733f0ec14d6, type: 2}
   _zRotation: 0
@@ -418,6 +416,7 @@ Transform:
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 6211424774900756973}
   - {fileID: 5178266488502903234}

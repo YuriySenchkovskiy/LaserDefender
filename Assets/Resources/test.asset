@@ -13,17 +13,6 @@ MonoBehaviour:
   m_Name: test
   m_EditorClassIdentifier: 
   _definitions:
-  - _isBossWave: 1
-    _path:
-    - _path: {fileID: 7893402912218641290, guid: 9b368ae267d8b48d785e59ae96755dc7, type: 3}
-      _enemyNumber: 0
-    _enemyPrefabs:
-    - {fileID: 3906724960234578330, guid: 51a5198ed165d40c28fa83c1b33cfb7d, type: 3}
-    _moveSpeed: 13.5
-    _timeBetweenEnemySpawns: 0
-    _spawnTimeVariance: 0
-    _minimumSpawnTime: 0
-    _breaksAfterWave: 5
   - _isBossWave: 0
     _path:
     - _path: {fileID: 7893402912218641290, guid: 7fb241e4980584b64bb22360cc62f143, type: 3}
@@ -39,3 +28,14 @@ MonoBehaviour:
     _spawnTimeVariance: 0.1
     _minimumSpawnTime: 0.45
     _breaksAfterWave: 7
+  - _isBossWave: 1
+    _path:
+    - _path: {fileID: 7893402912218641290, guid: 0bd7455ab90a944ff91b3180bd021d91, type: 3}
+      _enemyNumber: 0
+    _enemyPrefabs:
+    - {fileID: 3906724960234578330, guid: b760e26ebf6fd40e7ac570153a1629bb, type: 3}
+    _moveSpeed: 4.5
+    _timeBetweenEnemySpawns: 0
+    _spawnTimeVariance: 0
+    _minimumSpawnTime: 0
+    _breaksAfterWave: 5

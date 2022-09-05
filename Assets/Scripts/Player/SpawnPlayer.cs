@@ -1,4 +1,3 @@
-using Controller;
 using UnityEngine;
 using Utils;
 
@@ -6,10 +5,14 @@ namespace Player
 {
     public class SpawnPlayer : MonoBehaviour
     {
+        [SerializeField] private PlayerRepository _playerRepository;
+        
         private void Awake()
         {
-            var playerController = FindObjectOfType<PlayerController>();
-            SpawnUtils.Spawn(playerController.Player, transform.position, Quaternion.identity);
+            SpawnUtils.Spawn(_playerRepository.Player, 
+                            transform.position, 
+                            Quaternion.identity);
+            
             Destroy(gameObject);
         }
     }

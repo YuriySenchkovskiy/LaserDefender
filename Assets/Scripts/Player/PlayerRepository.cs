@@ -10,24 +10,27 @@ namespace Player
         private const string Name = "Player Repository";
         private bool _isHandledPlayer;
         private bool _isHandledIndex;
+        private GameObject _player;
 
         public bool IsHandledPlayer => _isHandledPlayer;
         public bool IsHandledIndex => _isHandledIndex;
         
         public PlayerDefinition[] Players => _players;
+        public GameObject Player => _player;
 
-        public GameObject GetPlayer(int index)
+        public void SetPlayer(int index)
         {
             _isHandledPlayer = false;
             
             if (index >= 0 && index < _players.Length)
             {
+                _player = _players[index].Prefab;
                 _isHandledPlayer = true;
-                return _players[index].Prefab;
+                return;
             }
 
+            _player = _players[0].Prefab;
             _isHandledPlayer = true;
-            return _players[0].Prefab;
         }
 
         public void SetPlayerChosen(int index)

@@ -15,11 +15,21 @@ namespace Waves
         private WaitForSeconds _waitBetweenSpawn;
         private WaitForSeconds _waitBetweenWaves;
 
+        public static WaveSpawner Instance;
         public WaveStatus WaveStatus => _waveStatus;
         public WaveDefinition CurrentWave => _currentWave;
 
         private void Awake()
         {
+            if (Instance == null)
+            {
+                Instance = this;
+            }
+            else if (Instance != this)
+            {
+                Destroy(gameObject);
+            }
+            
             _waitBetweenWaves = new WaitForSeconds(_timeBetweenWaves);
         }
 

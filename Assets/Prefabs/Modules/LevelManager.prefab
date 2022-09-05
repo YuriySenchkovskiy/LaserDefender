@@ -28,6 +28,7 @@ Transform:
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1718938245348437424}
   m_RootOrder: 2
@@ -86,6 +87,7 @@ GameObject:
   - component: {fileID: 760809342638815780}
   - component: {fileID: 213407466952822344}
   - component: {fileID: 890622651475949320}
+  - component: {fileID: 5007966246201153964}
   m_Layer: 0
   m_Name: ScoreKeeper
   m_TagString: Untagged
@@ -103,6 +105,7 @@ Transform:
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1718938245348437424}
   m_RootOrder: 0
@@ -121,6 +124,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _scoreChanged: {fileID: 11400000, guid: 5cf258e42ea44444ab3385a2af8387b6, type: 2}
   _previousScore: {fileID: 11400000, guid: 17e830e585cff4d8a9fd16cd52e567ab, type: 2}
+  _keepedScore: {fileID: 11400000, guid: 0560e32c1b72b4974914c5b18f776523, type: 2}
+  _keepedBestScore: {fileID: 11400000, guid: 23ee8048ce2e0430bb03511fea5f6e9f, type: 2}
+  _keepedWonStatus: {fileID: 11400000, guid: a4fa86c08dbe04fb5bcc5e77962af047, type: 2}
 --- !u!114 &213407466952822344
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -177,6 +183,34 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+--- !u!114 &5007966246201153964
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 760809342638815778}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a67bc813042491e845aa2d1d173e22b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Event: {fileID: 11400000, guid: 6500849d4c9344b47ac7aa07681c33c4, type: 2}
+  Response:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 760809342638815780}
+        m_TargetAssemblyTypeName: Controller.ScoreKeeper, Assembly-CSharp
+        m_MethodName: NotifyData
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!1 &1718938245348437425
 GameObject:
   m_ObjectHideFlags: 0
@@ -212,6 +246,7 @@ Transform:
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -2.3410082, y: 57.975, z: -1219.9733}
   m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 760809342638815779}
   - {fileID: 7681159752038225604}
@@ -500,6 +535,7 @@ Transform:
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1718938245348437424}
   m_RootOrder: 1

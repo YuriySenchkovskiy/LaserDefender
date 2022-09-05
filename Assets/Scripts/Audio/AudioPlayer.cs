@@ -1,3 +1,4 @@
+using System;
 using System.Threading.Tasks;
 using UnityEngine;
 
@@ -36,8 +37,21 @@ namespace Audio
         private float _startMusicVolume = 0.8f;
         private bool _isChangedSound;
 
+        public static AudioPlayer Instance;
         public float MusicVolume => _targetMusicVolume;
         public float SFXVolume => _targetSFXVolume;
+
+        private void Awake()
+        {
+            if (Instance == null)
+            {
+                Instance = this;
+            }
+            else if (Instance != this)
+            {
+                Destroy(gameObject);
+            }
+        }
 
         private void Start()
         {

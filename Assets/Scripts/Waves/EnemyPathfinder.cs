@@ -16,7 +16,7 @@ namespace Waves
 
         private void Awake()
         {
-            _spawner = FindObjectOfType<WaveSpawner>();
+            _spawner = WaveSpawner.Instance;
         }
 
         private void Start()
@@ -33,7 +33,7 @@ namespace Waves
 
         public void SetStartValue()
         {
-            _spawner = FindObjectOfType<WaveSpawner>();
+            _spawner = WaveSpawner.Instance;
             _waveDefinition = _spawner.CurrentWave;
             _wayPointIndex = 0;
             _wayPoints = _waveDefinition.GetWaypoints();

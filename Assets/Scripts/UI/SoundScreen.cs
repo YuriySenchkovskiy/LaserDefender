@@ -15,8 +15,7 @@ namespace UI
 
         private void Start()
         {
-            _audioPlayer = FindObjectOfType<AudioPlayer>();
-
+            _audioPlayer = AudioPlayer.Instance;
             _sfxSlider.value = _audioPlayer.SFXVolume;
             _musicSlider.value = _audioPlayer.MusicVolume;
         }

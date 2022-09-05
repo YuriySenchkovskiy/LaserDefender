@@ -4,16 +4,19 @@ namespace Controller
 {
     public class ScoreKeeper : MonoBehaviour
     {
+        [Header("General")]
         [SerializeField] private Observer.IntEvent _scoreChanged;
         [SerializeField] private Observer.IntEvent _previousScore;
+        
+        [Header("Events")] 
+        [SerializeField] private Observer.IntEvent _keepedScore;
+        [SerializeField] private Observer.IntEvent _keepedBestScore;
+        [SerializeField] private Observer.BoolEvent _keepedWonStatus;
         
         private const string BestResult = "best_result";
         private int _bestScore;
         private int _score;
         private bool _isWon;
-        
-        public int Score => _score;
-        public bool IsWon => _isWon;
 
         public void ResetScore()
         {
@@ -34,7 +37,15 @@ namespace Controller
             _scoreChanged.Occured(_score);
         }
 
-        public int GetBestScore()
+        public void NotifyData()
+        {
+            SetBestScore();
+            _keepedScore.Occured(_score);
+            _keepedBestScore.Occured(_bestScore);
+            _keepedWonStatus.Occured(_isWon);
+        }
+
+        private void SetBestScore()
         {
             if (!PlayerPrefs.HasKey(BestResult))
             {
@@ -51,8 +62,6 @@ namespace Controller
                 PlayerPrefs.SetInt(BestResult, _score);
                 _bestScore = _score;
             }
-
-            return _bestScore;
         }
     }
 }

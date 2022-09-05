@@ -1,4 +1,3 @@
-using Controller;
 using TMPro;
 using UnityEngine;
 
@@ -17,30 +16,32 @@ namespace UI
         [SerializeField] private string _textForBestScore = "Your best result:\n";
         [SerializeField] private string _textForScore = "You scored:\n";
         [SerializeField] private string _numberFormat = "000000000";
-        
-        [Header("Events")]
+
+        [Header("Events")] 
+        [SerializeField] private Observer.Event _sceneLoaded;
         [SerializeField] private Observer.Event _playClicked;
         [SerializeField] private Observer.Event _menuClicked;
         [SerializeField] private Observer.Event _clicked;
 
-        private ScoreKeeper _scoreKeeper;
-
-        private void Awake()
-        {
-            _scoreKeeper = FindObjectOfType<ScoreKeeper>();
-            SetLable();
-        }
-
         private void Start()
         {
-            _scoreText.text = _textForScore + _scoreKeeper.Score.ToString(_numberFormat);
-            _bestScoreText.text = _textForBestScore + _scoreKeeper.GetBestScore().ToString(_numberFormat);
+            _sceneLoaded.Occured();
         }
 
-        private void SetLable()
+        public void SetScore(int score)
         {
-            _gameResultText.text = _scoreKeeper.IsWon ? _textForWin : _textForLose;
-            _tryAgainText.gameObject.SetActive(!_scoreKeeper.IsWon);
+            _scoreText.text = _textForScore + score.ToString(_numberFormat);
+        }
+
+        public void SetBestScore(int bestScore)
+        {
+            _bestScoreText.text = _textForBestScore + bestScore.ToString(_numberFormat);
+        }
+
+        public void SetTitle(bool isWon)
+        {
+            _gameResultText.text = isWon ? _textForWin : _textForLose;
+            _tryAgainText.gameObject.SetActive(!isWon);
         }
 
         public void Play()

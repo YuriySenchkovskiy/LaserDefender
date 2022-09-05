@@ -9,23 +9,20 @@ namespace Controller
         [SerializeField] private PlayerRepository _playerRepository;
         [SerializeField] private Observer.Event _playerSelectHandled;
 
-        private const string PlayerKey = "player index";
+        private const string PlayerKey = "player_index";
         private int _playerIndex;
-        private GameObject _player;
-
-        public GameObject Player => _player;
 
         private void Awake()
         {
             _playerIndex = PlayerPrefs.GetInt(PlayerKey, 0);
-            _player = _playerRepository.GetPlayer(_playerIndex);
+            _playerRepository.SetPlayer(_playerIndex);
             _playerRepository.SetPlayerChosen(_playerIndex);
         }
 
         public async void SetPlayerIndex(int index)
         {
+            _playerRepository.SetPlayer(index);
             _playerRepository.SetPlayerChosen(index);
-            _player = _playerRepository.GetPlayer(index);
             PlayerPrefs.SetInt(PlayerKey, index);
 
             while (!_playerRepository.IsHandledPlayer || !_playerRepository.IsHandledIndex)

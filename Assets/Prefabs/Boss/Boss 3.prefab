@@ -14,7 +14,6 @@ GameObject:
   - component: {fileID: -8550966163363397764}
   - component: {fileID: 8352620227371486754}
   - component: {fileID: -576622122093465422}
-  - component: {fileID: 7613476366631254170}
   - component: {fileID: 7047720251208507413}
   - component: {fileID: 636957319988032409}
   - component: {fileID: 5886081278295294387}
@@ -148,34 +147,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _bossDie: {fileID: 11400000, guid: 965124e28ba9645d59a88bf8f07c36d0, type: 2}
---- !u!114 &7613476366631254170
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3906724960234578330}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9a67bc813042491e845aa2d1d173e22b, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Event: {fileID: 11400000, guid: 8ecfbada7cb5c424587f8f41793fcb67, type: 2}
-  Response:
-    m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: -576622122093465422}
-        m_TargetAssemblyTypeName: Boss.BossDie, Assembly-CSharp
-        m_MethodName: GetEffect
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
 --- !u!114 &7047720251208507413
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -226,6 +197,18 @@ MonoBehaviour:
       - m_Target: {fileID: 636957319988032409}
         m_TargetAssemblyTypeName: Utils.SpawnComponent, Assembly-CSharp
         m_MethodName: Spawn
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: -576622122093465422}
+        m_TargetAssemblyTypeName: Boss.BossDie, Assembly-CSharp
+        m_MethodName: GetEffect
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}

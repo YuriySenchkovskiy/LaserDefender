@@ -7,12 +7,11 @@ namespace Utils
     {
         private void OnTriggerEnter2D(Collider2D other)
         {
-            if (!other.gameObject.GetComponent<PoolItem>())
+            if (!other.gameObject.TryGetComponent(out PoolItem poolItem))
             {
                 return;
             }
             
-            var poolItem = other.GetComponent<PoolItem>();
             poolItem.Release();
         }
     }

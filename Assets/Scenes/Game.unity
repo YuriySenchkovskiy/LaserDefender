@@ -1343,7 +1343,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d8cd998ea6d445f9ba576b48e4d2e0b8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _waveConfiguration: {fileID: 11400000, guid: 747ca8a4aa7f745ab9641b56494098d8, type: 2}
+  _waveConfiguration: {fileID: 11400000, guid: 1ee5ca4d8d5f4409a9e99d29abb97012, type: 2}
   _waveSpawner: {fileID: 793991117}
   _delayBeforeFirstSpawn: 2.8
   _counterEven: {fileID: 11400000, guid: 118c40fc0e2a94742a3f0c4590d88a29, type: 2}

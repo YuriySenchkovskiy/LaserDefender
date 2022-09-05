@@ -40,7 +40,7 @@ namespace ObjectPool
                 return pooledItem.gameObject;
             }
             
-            var instance = SpawnUtils.Spawn(go, position, rotation, gameObject.name);
+            var instance = SpawnUtils.Spawn(go, position, rotation, _instance.gameObject);
             var poolItem = instance.GetComponent<PoolItem>();
             poolItem.Retain(id, this);
 

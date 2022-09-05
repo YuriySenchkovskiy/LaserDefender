@@ -4,16 +4,13 @@ namespace Utils
 {
     public class SpawnUtils : MonoBehaviour
     {
-        private const string ContainerName = "WaveSpawner";
-
-        public static GameObject Spawn(GameObject prefab, Vector3 position, Quaternion rotation, string containerName = ContainerName)
+        public static GameObject Spawn(GameObject prefab, Vector3 position, Quaternion rotation)
         {
-            var container = GameObject.Find(containerName);
-            if (container == null)
-            {
-                container = new GameObject(containerName);
-            }
-            
+            return Instantiate(prefab, position, rotation);
+        }
+
+        public static GameObject Spawn(GameObject prefab, Vector3 position, Quaternion rotation, GameObject container)
+        {
             return Instantiate(prefab, position, rotation, container.transform);
         }
     }
